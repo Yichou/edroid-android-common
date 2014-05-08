@@ -1,0 +1,239 @@
+com.yichou.plugin.Ads -> com.yichou.plugin.a:
+    java.lang.String key -> a
+    java.lang.String type -> b
+    java.lang.String title -> c
+    java.lang.String msg -> d
+    java.lang.String url -> e
+    java.lang.String icon -> f
+    java.lang.String pkg -> g
+    boolean foce -> h
+    int color -> i
+    int maxShowCount -> j
+    int maxRunCount -> k
+    boolean isPage -> l
+    boolean downloaded -> m
+    boolean showed -> n
+    boolean installed -> o
+    boolean showAfterDownload -> p
+    boolean directRun -> q
+    boolean valid -> r
+    java.lang.String savePath -> s
+    int hour -> t
+    void invalid() -> a
+    java.lang.String getKey() -> b
+    boolean isOutDate() -> c
+    void formJsonObject(org.json.JSONObject) -> a
+    com.yichou.plugin.common.utils.NotifyUtils$Notify toNotify(int) -> a
+com.yichou.plugin.MyPlugin -> com.yichou.plugin.MyPlugin:
+    java.lang.String TAG -> a
+    boolean bInited -> b
+    boolean bIgnore -> c
+    android.os.Handler sHandler -> d
+    android.content.BroadcastReceiver sReceiver -> e
+    void regReceiver(android.content.Context) -> d
+    void reportNetType(android.content.Context) -> e
+    void checkVersion(android.content.Context) -> f
+    void checkInit(android.content.Context) -> g
+    void onCreate(android.app.Activity) -> onCreate
+    void onPause(android.content.Context) -> onPause
+    void getPush(android.content.Context) -> a
+    void onResume(android.content.Context) -> onResume
+    void onDestroy(android.content.Context) -> onDestroy
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+    void access$0(android.content.Context) -> b
+    void access$1(android.content.Context) -> c
+com.yichou.plugin.MyPlugin$1 -> com.yichou.plugin.b:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.yichou.plugin.MyPlugin$2 -> com.yichou.plugin.c:
+    android.content.SharedPreferences val$sp -> a
+    android.content.Context val$context -> b
+    void run() -> run
+com.yichou.plugin.MyPlugin$2$1 -> com.yichou.plugin.d:
+    com.yichou.plugin.MyPlugin$2 this$1 -> a
+    android.content.Context val$context -> b
+    void run() -> run
+com.yichou.plugin.MyPush -> com.yichou.plugin.e:
+    java.lang.String TAG -> a
+    java.lang.String ROOT -> b
+    com.yichou.plugin.Ads sAds -> c
+    boolean DEBUG -> d
+    java.lang.String state -> e
+    java.lang.String getStringOL(android.content.Context,java.lang.String) -> a
+    int getIntRecode(android.content.Context,java.lang.String) -> b
+    int addIntRecode(android.content.Context,java.lang.String,int) -> a
+    boolean hasInstallRecode(android.content.Context) -> h
+    void recodeInstall(android.content.Context) -> i
+    int getRunCount(android.content.Context) -> j
+    int addRunCount(android.content.Context) -> k
+    int addRunCount(android.content.Context,int) -> a
+    void clearRunRecode(android.content.Context) -> a
+    int getShowCount(android.content.Context) -> l
+    int addShowCount(android.content.Context) -> m
+    void clearShowRecode(android.content.Context) -> b
+    com.yichou.plugin.Ads dlAds(android.content.Context) -> n
+    void update(android.content.Context) -> c
+    void startDownload(android.content.Context) -> d
+    void showNotify(android.content.Context) -> o
+    boolean handleShow(android.content.Context) -> e
+    void handleClick(android.content.Context,android.content.Intent) -> b
+    boolean handleReceiver(android.content.Context,android.content.Intent) -> a
+    void access$0(android.content.Context) -> f
+    int access$1(android.content.Context) -> g
+com.yichou.plugin.MyPush$1 -> com.yichou.plugin.f:
+    android.content.Context val$context -> a
+    void onStart(long,long) -> a
+    void onFinish() -> a
+    void onError(java.lang.String) -> a
+com.yichou.plugin.MyPush$2 -> com.yichou.plugin.g:
+    android.content.Context val$context -> a
+    void run() -> run
+com.yichou.plugin.QLog -> com.yichou.plugin.h:
+    boolean DEBUG -> a
+    void i(java.lang.String,java.lang.String) -> a
+    void d(java.lang.String,java.lang.String) -> b
+    void e(java.lang.String,java.lang.String) -> c
+com.yichou.plugin.UmengUtils -> com.yichou.plugin.i:
+    java.lang.String getConfigParams(android.content.Context,java.lang.String) -> a
+    void onEvent(android.content.Context,java.lang.String) -> b
+    void onEvent(android.content.Context,java.lang.String,java.lang.String) -> a
+com.yichou.plugin.common.base64.Base64 -> com.yichou.plugin.common.a.a:
+    byte[] decode(byte[]) -> a
+    void decode(java.io.InputStream,java.io.OutputStream) -> a
+    void copy(java.io.InputStream,java.io.OutputStream) -> b
+com.yichou.plugin.common.base64.Base64InputStream -> com.yichou.plugin.common.a.b:
+    java.io.InputStream inputStream -> a
+    int[] buffer -> b
+    int bufferCounter -> c
+    boolean eof -> d
+    int read() -> read
+    void acquire() -> a
+    void close() -> close
+com.yichou.plugin.common.base64.Shared -> com.yichou.plugin.common.a.c:
+    java.lang.String chars -> a
+    char pad -> b
+com.yichou.plugin.common.dl.DownloadListener -> com.yichou.plugin.common.b.a:
+    void onStart(long,long) -> a
+    void onProgress(long,byte) -> a
+    void onCancel() -> b
+    void onFinish() -> a
+    void onError(java.lang.String) -> a
+com.yichou.plugin.common.dl.DownloadManager -> com.yichou.plugin.common.b.b:
+    java.util.HashMap hashMap -> a
+    void add(com.yichou.plugin.common.dl.Downloader) -> a
+    void remove(com.yichou.plugin.common.dl.Downloader) -> b
+    boolean has(java.lang.String) -> a
+    boolean isFileDownloadIng(java.lang.String) -> b
+    com.yichou.plugin.common.dl.Downloader start(android.content.Context,java.lang.String,java.lang.String,com.yichou.plugin.common.dl.DownloadListener) -> a
+com.yichou.plugin.common.dl.Downloader -> com.yichou.plugin.common.b.c:
+    java.lang.String fileSavePath -> a
+    java.lang.String urlString -> b
+    com.yichou.plugin.common.dl.IDownloadListener listener -> c
+    boolean canceled -> d
+    long mTotalLength -> e
+    long mCurLength -> f
+    android.content.Context mContext -> g
+    java.lang.String getFileSavePath() -> a
+    java.net.HttpURLConnection getDownloadConnection(java.lang.String,long) -> a
+    void run() -> run
+com.yichou.plugin.common.dl.IDownloadListener -> com.yichou.plugin.common.b.d:
+    void onStart(long,long) -> a
+    void onProgress(long,byte) -> a
+    void onCancel() -> b
+    void onFinish() -> a
+    void onError(java.lang.String) -> a
+com.yichou.plugin.common.utils.ApkUtils -> com.yichou.plugin.common.utils.a:
+    boolean isInstalled(android.content.Context,java.lang.String) -> a
+    android.content.Intent getInstallIntent(android.content.Context,java.io.File) -> a
+    android.content.Intent getRunIntent(android.content.Context,java.lang.String) -> b
+com.yichou.plugin.common.utils.CipherUtils -> com.yichou.plugin.common.utils.b:
+    char[] hexDigitsChr -> a
+    java.lang.String Md5Enc(byte[]) -> a
+    java.lang.String Md5Enc16(byte[]) -> b
+com.yichou.plugin.common.utils.FileUtils -> com.yichou.plugin.common.utils.FileUtils:
+    int createDir(java.io.File) -> a
+    int removeDir(java.io.File) -> b
+    void checkParentPath(java.lang.String) -> a
+    void checkParentPath(java.io.File) -> c
+    byte[] fileToBytes(java.io.File) -> d
+    byte[] fileToBytes(java.io.File,int,int) -> a
+    boolean isSDMounted() -> a
+    boolean isSDAvailable(int) -> a
+    boolean isSDAvailable() -> b
+    long getSDLeftSpace() -> c
+    java.nio.channels.FileLock tryFileLock(java.io.File) -> e
+    void freeFileLock(java.nio.channels.FileLock,java.io.File) -> a
+com.yichou.plugin.common.utils.FileUtils$FileState -> com.yichou.plugin.common.utils.FileUtils$FileState:
+    com.yichou.plugin.common.utils.FileUtils$FileState FState_Dir -> a
+    com.yichou.plugin.common.utils.FileUtils$FileState FState_File -> b
+    com.yichou.plugin.common.utils.FileUtils$FileState FState_None -> c
+    com.yichou.plugin.common.utils.FileUtils$FileState FState_Other -> d
+    java.lang.String tag -> e
+    com.yichou.plugin.common.utils.FileUtils$FileState[] ENUM$VALUES -> f
+    java.lang.String toString() -> toString
+    com.yichou.plugin.common.utils.FileUtils$FileState[] values() -> values
+    com.yichou.plugin.common.utils.FileUtils$FileState valueOf(java.lang.String) -> valueOf
+com.yichou.plugin.common.utils.HttpUtils -> com.yichou.plugin.common.utils.c:
+    android.net.NetworkInfo getActiveNetworkInfo(android.content.Context) -> a
+    boolean needProxy(android.content.Context) -> b
+    java.net.InetSocketAddress getProxyAddress(android.content.Context) -> c
+    java.net.Proxy getProxy(android.content.Context) -> d
+com.yichou.plugin.common.utils.IconLoader -> com.yichou.plugin.common.utils.d:
+    java.lang.String ICON_STORE_PATH -> a
+    void setCachePath(java.lang.String) -> a
+    android.graphics.Bitmap fitDpi(android.content.res.Resources,android.graphics.Bitmap,int) -> a
+    android.graphics.Bitmap fromLocal(android.content.Context,java.lang.String) -> a
+    void toLocal(android.content.Context,java.lang.String,android.graphics.Bitmap) -> a
+    android.graphics.Bitmap loadBitmap(android.content.Context,java.lang.String,int) -> a
+com.yichou.plugin.common.utils.IpUtils -> com.yichou.plugin.common.utils.e:
+    com.yichou.plugin.common.utils.IpUtils$Location getLocationFromBaidu() -> a
+    java.lang.String readString(java.io.InputStream) -> a
+    com.yichou.plugin.common.utils.IpUtils$Location getLocationFromBaidu(java.lang.String) -> a
+com.yichou.plugin.common.utils.IpUtils$Location -> com.yichou.plugin.common.utils.f:
+    java.lang.String city -> a
+    java.lang.String province -> b
+    java.lang.String toString() -> toString
+com.yichou.plugin.common.utils.NotifyUtils -> com.yichou.plugin.common.utils.NotifyUtils:
+    java.lang.String INTENT_CATGGORY -> a
+    int id_icon -> b
+    int id_text -> c
+    int id_title -> d
+    int getIntField(java.lang.Class,java.lang.String) -> a
+    void showNotification(android.content.Context,com.yichou.plugin.common.utils.NotifyUtils$Notify) -> a
+    android.content.IntentFilter getIntentFilter() -> a
+com.yichou.plugin.common.utils.NotifyUtils$Notify -> com.yichou.plugin.common.utils.NotifyUtils$Notify:
+    boolean canClear -> a
+    int id -> b
+    int smallIconResId -> c
+    int titleColor -> d
+    java.lang.String title -> e
+    java.lang.String msg -> f
+    java.lang.String tickerText -> g
+    java.lang.String iconUrl -> h
+com.yichou.plugin.common.utils.SysUtils -> com.yichou.plugin.common.utils.SysUtils:
+    android.net.NetworkInfo getActiveNetworkInfo(android.content.Context) -> a
+    boolean isNetAvailable(android.content.Context) -> b
+    int getNetworkType(android.content.Context) -> c
+    boolean isWifiOr3g(android.content.Context) -> d
+    java.lang.String getStringNetworkType(android.content.Context) -> e
+    java.lang.String getNetworkApn(android.content.Context) -> f
+    boolean isPhoneStateReadable(android.content.Context) -> g
+    com.yichou.plugin.common.utils.SysUtils$Standard getNetworkStandard(android.content.Context) -> h
+com.yichou.plugin.common.utils.SysUtils$Operator -> com.yichou.plugin.common.utils.SysUtils$Operator:
+    com.yichou.plugin.common.utils.SysUtils$Operator UNKNOW -> a
+    com.yichou.plugin.common.utils.SysUtils$Operator MOBILE -> b
+    com.yichou.plugin.common.utils.SysUtils$Operator TELECOM -> c
+    com.yichou.plugin.common.utils.SysUtils$Operator UNICOM -> d
+    com.yichou.plugin.common.utils.SysUtils$Operator[] ENUM$VALUES -> e
+    com.yichou.plugin.common.utils.SysUtils$Operator[] values() -> values
+    com.yichou.plugin.common.utils.SysUtils$Operator valueOf(java.lang.String) -> valueOf
+com.yichou.plugin.common.utils.SysUtils$Standard -> com.yichou.plugin.common.utils.SysUtils$Standard:
+    com.yichou.plugin.common.utils.SysUtils$Standard TYPE_XX -> a
+    com.yichou.plugin.common.utils.SysUtils$Standard TYPE_2G -> b
+    com.yichou.plugin.common.utils.SysUtils$Standard TYPE_3G -> c
+    com.yichou.plugin.common.utils.SysUtils$Standard[] ENUM$VALUES -> d
+    com.yichou.plugin.common.utils.SysUtils$Standard[] values() -> values
+    com.yichou.plugin.common.utils.SysUtils$Standard valueOf(java.lang.String) -> valueOf
+com.yichou.plugin.common.utils.TimeUtils -> com.yichou.plugin.common.utils.g:
+    java.util.Locale getLocale() -> a
+    int getDayOfYear() -> b
+    int getHourOfDay() -> c
